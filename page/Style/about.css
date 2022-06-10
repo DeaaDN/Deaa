@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.contaner{
+    width: 80%;
+    margin: auto;  
+}
+header{
+    background-color: rgb(43, 43, 43);
+} 
+header a{
+    color: seashell;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+header .contaner,
+.F-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a:hover{
+    color: hsl(32deg 42% 74%);
+    background-color: rgba(186, 177, 167, 0.632);
+    transition-duration: 0.5s;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+
+#FS .BG{
+    height: calc(100vh);
+    background-image: url("../img/about/costume_tuxedo_bar_code_black_32938_1280x720.jpg");
+    text-align: center;
+    font-size: 28px;
+    background-size: cover;  
+    color: rgb(183, 145, 118);
+    padding: 40px;
+}
+#FS .BG h2 span span{
+    color: rgb(133, 103, 81);
+    font-size: 30px;
+    padding: -20px;
+    margin: -5px;
+}
+#FS .BG h2 span span span{
+    color:orangered;
+    font-size: 30px;
+}
+
+#FS .BG h2{
+    color: rgb(255, 176, 119);
+    margin: 40px;
+}
+
+#FS .BG h2 span{
+    color: rgb(255, 106, 0);
+    padding: 10px;
+    margin-left: 10px;
+    font-size:55px;
+}
+#FS .BG p{
+    margin-top: 50px;
+    font-size: 30px;
+    background-color: rgba(255, 117, 18, 0.467);
+}
+
+#SS{
+    height: calc(100vh);
+    background-color: orangered;
+    text-align: center;
+    font-size: 28px;
+    background-size: cover; 
+    padding: 150px;
+    margin-top: -100px;
+ 
+}
+#SS a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#SS a:hover{
+    color: orangered;
+    background-color: black;
+    transition-duration: 1.2s;
+}
+#SS a i{
+    color: seashell;
+}
+footer span{
+    padding: 15px;
+    color: rgba(255, 17, 255, 0.774);
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer a{
+    color: rgb(255, 106, 0);
+    text-decoration: none;
+    font-size: 45px;
+    padding: 15px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    cursor: url ('../../ حزمة نمط الماوس / arr46.png'), auto;
+}
+
+a:hover {
+    cursor: url ('../../ حزمة نمط الماوس / arr1.png'), pointer;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Css/all.css">
+        <link rel="stylesheet" href="Style/Style.css">
+        <link rel="stylesheet" href="Style/about.css">
+        <script>
+            (function () {
+                var a_idx = 0;
+                window.onclick = function (event) {
+                    var a = new Array("❤HTML❤","₪","❤JS❤","₪", "❤CSS❤","₪", " ☪  ☪ ", "₪","❤", "☪","✈","☣","☢"," ≋","《 》","₪","€","₪","¥","₪");
+    
+                    var heart = document.createElement("b"); 
+                    heart.onselectstart = new Function('event.returnValue=false'); 
+    
+                    document.body.appendChild(heart).innerHTML = a[a_idx]; 
+                    a_idx = (a_idx + 1) % a.length;
+                    heart.style.cssText = "position: fixed;left:-100%;"; 
+    
+                    var f = 16, 
+                        x = event.clientX - f / 2, 
+                        y = event.clientY - f, 
+                        c = randomColor(), 
+                        a = 1, 
+                        s = 1.2;
+    
+                    var timer = setInterval(function () {
+                        if (a <= 0) {
+                            document.body.removeChild(heart);
+                            clearInterval(timer);
+                        } else {
+                            heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                                c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                                s + ");";
+    
+                            y--;
+                            a -= 0.016;
+                            s += 0.002;
+                        }
+                    }, 15)
+    
+                }
+                function randomColor() {
+    
+                    return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+                    .random() * 255)) + ")";
+                }
+            }());
+        </script>
+    </head>
+    <body>
+        <header>
+        <div class="contaner">
+            <a href="Home.html"><i class="fa-solid fa-code"> </i></i></a>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html"class="active">About</a></li>
+                <li><a href="imges.html">IMGES</a></li>
+                <li><a href="Security.html">Security</a></li>
+            </ul>
+        </div>
+        </header>
+        <section id="FS">
+            <div class="BG">
+                    <h2>My Name is <span>Deaa<span>a<span>B</span>u</span>Nade</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aspernatur maxime voluptates ut labore consequuntur repellendus itaque. Corrupti alias nemo aperiam distinctio nulla quam ipsam maxime, unde, inventore velit quaerat.</p>
+            </div>
+            <div class="FP">
+                <h3></h3>
+            </div>
+        </section>
+        <section id="SS">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i>Ďěaa M Ăbû Nadi</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>_deaa_abu_nade_</a>
+            <a href="#"><i class="fa-brands fa-telegram"></i>@DeaaDM</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>0592557396</a>
+        </section>
+        <footer><span>Safety</span> <a href="https://www.youtube.com/watch?v=8dQ55_k_tDA" target="_blanck"><i class="fa-brands fa-gratipay"></i></a> <span>Security</span></footer>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.contaner{
+    width: 80%;
+    margin: auto;  
+}
+header{
+    background-color: rgb(43, 43, 43);
+} 
+header a{
+    color: seashell;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+header .contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a:hover{
+    color: hsl(32deg 42% 74%);
+    background-color: rgba(186, 177, 167, 0.632);
+    transition-duration: 0.5s;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+header .contaner ul li .POW a i{
+    font-size: 30px;
+    color: #f43310;
+}
+header .contaner ul li span a{
+    color: #f43310;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 43, 43);
+    color: seashell;
+    font-size: 28px;
+    padding: 20px;
+
+}
+
+footer p span{
+    color: rgba(220, 20, 60, 0.775);
+}
+#F-S .contaner{
+    display: flex;
+    background-color: rgb(163, 159, 159);
+}
+.left-div{
+    width: 75%;
+    margin: 20px 10px;
+    text-align: center;
+}
+.left-div h2{
+    margin-bottom: 20px;
+}
+
+.img-div{
+    width:25%;
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#S-S{
+    background-image: url(../img/about/costume_tuxedo_bar_code_black_32938_1280x720.jpg);
+    background-size: cover;
+    padding: 50px 0;
+}
+.contaner h2{
+    color: seashell;
+    text-align: center;
+    font-size: 30px;
+}
+.card{
+    background-color: #f72e0b86;
+    color: seashell;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    image-resolution: initial;
+    object-fit: cover;
+    border-radius: 50%;
+}
